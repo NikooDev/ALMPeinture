@@ -9,7 +9,7 @@ const Title = ({
 	className?: string
 }>) => {
 	return (
-		<h1 className={Classname('font-rebel text-[3rem] text-slate-800 font-bold', className)}>{ children }</h1>
+		<h1 className={Classname('font-rebel text-[3rem] font-bold', className)}>{ children }</h1>
 	)
 }
 
