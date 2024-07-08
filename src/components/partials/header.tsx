@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Logo from '@/components/ui/logo';
 import Container from '@/components/ui/container';
 import Classname from 'classnames';
-import { Link, Events } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const Header = () => {
 	const [loading, setLoading] = useState<boolean>(true);
@@ -25,14 +25,6 @@ const Header = () => {
 
 		setLoading(false);
 		handleScroll();
-
-		Events.scrollEvent.register('end', (to, element) => {
-			if (to === 'about') {
-				setScrollHeader(true);
-			} else if (to === 'intro') {
-				setScrollHeader(false);
-			}
-		});
 
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
