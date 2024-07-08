@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 const Logo = ({ scrollHeader, textWhite }: { scrollHeader: boolean, textWhite?: boolean }) => {
 	return (
 		<Link to="intro" smooth={true} spy={true} className={Classname(scrollHeader ? 'items-center pt-0 h-16' : 'items-start pt-3 h-24', 'hover:cursor-pointer inline-flex relative')}>
-			<div className={Classname(scrollHeader ? 'flex gap-3 text-slate-800 z-10' : 'text-white text-shadow', 'font-rebel text-2xl font-bold text-center', textWhite && 'text-white')}>
+			<div className={Classname(scrollHeader ? 'flex gap-3 text-slate-800 z-10' : 'text-white text-shadow', 'font-rebel text-2xl text-center', textWhite && 'text-white text-shadow')}>
 				<p>ALM</p>
 				<p>Peinture</p>
 			</div>

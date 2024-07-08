@@ -45,7 +45,7 @@ const About = () => {
 							personnaliser votre intérieur.<br/><br/>Les revêtements de sols, les papiers peint, la peinture… sont autant
 							d’éléments qui me permettront de mettre votre maison à votre goût.
 						</p>
-						<div className="mt-4 flex justify-end w-full">
+						<div className="mt-8 flex justify-end w-full">
 							<Logo scrollHeader={true} textWhite/>
 						</div>
 					</div>
