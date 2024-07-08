@@ -29,7 +29,7 @@ const About = () => {
 	}, []);
 
 	return (
-		<section className="pt-28 bg-slate-800 h-screen">
+		<section className="py-28 bg-slate-800">
 			<Container>
 				<Title className="text-center mb-16 text-slate-200">Mon histoire</Title>
 				<div className="flex items-center justify-around w-full">
