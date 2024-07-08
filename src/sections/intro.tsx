@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Intro = () => {
 	return (
-		<section className="flex items-center relative h-screen w-full" id="intro">
+		<section className="flex items-center relative h-screen w-full">
 			<Container>
 				<div className="flex items-center">
 					<div className="leading-[1] w-full text-center">
@@ -32,7 +32,7 @@ const Intro = () => {
 			</Container>
 			<div className="bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full z-30"></div>
 			<div className="absolute h-full w-full z-20">
-				<Image src="/static/img/bg_intro.webp" blurDataURL="/static/img/bg_intro.webp" placeholder="blur" priority={true} fill={true} className="object-cover" fetchPriority="high"
+				<Image src="/static/img/bg_intro.png" blurDataURL="/static/img/bg_intro.png" placeholder="blur" priority={true} fill={true} className="object-cover" fetchPriority="high"
 							 alt="intro"/>
 			</div>
 		</section>

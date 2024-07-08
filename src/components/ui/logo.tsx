@@ -1,11 +1,11 @@
 'use client';
 
 import Classname from 'classnames';
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 
 const Logo = ({ scrollHeader }: { scrollHeader: boolean }) => {
 	return (
-		<Link href="/" className={Classname(scrollHeader ? 'items-center pt-0 h-16' : 'items-start pt-3 h-24', 'inline-flex relative')}>
+		<Link to="intro" smooth={true} spy={true} className={Classname(scrollHeader ? 'items-center pt-0 h-16' : 'items-start pt-3 h-24', 'hover:cursor-pointer inline-flex relative')}>
 			<div className={Classname(scrollHeader ? 'flex gap-3 text-slate-800 z-10' : 'text-white text-shadow', 'font-rebel text-2xl font-bold text-center')}>
 				<p>ALM</p>
 				<p>Peinture</p>

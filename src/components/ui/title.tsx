@@ -1,12 +1,15 @@
 import React from 'react';
+import Classname from 'classnames';
 
 const Title = ({
-	children
+	children,
+	className
 }: Readonly<{
 	children: React.ReactNode;
+	className?: string
 }>) => {
 	return (
-		<h1 className="font-rebel text-4xl text-slate-800 font-bold">{ children }</h1>
+		<h1 className={Classname('font-rebel text-[3rem] text-slate-800 font-bold', className)}>{ children }</h1>
 	)
 }
 

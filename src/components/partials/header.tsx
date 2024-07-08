@@ -4,12 +4,12 @@ import { useEffect, useState } from 'react';
 import Logo from '@/components/ui/logo';
 import Container from '@/components/ui/container';
 import Classname from 'classnames';
-import Link from 'next/link';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Header = () => {
 	const [loading, setLoading] = useState<boolean>(true);
 	const [scrollHeader, setScrollHeader] = useState<boolean>(true);
-	const classLink = `flex items-center ${scrollHeader ? 'h-16 text-slate-600 scrolled' : 'h-28 text-white text-shadow'} justify-center px-4 relative uppercase text-base font-bold header-link`;
+	const classLink = `flex items-center ${scrollHeader ? 'h-16 text-slate-600 scrolled' : 'h-28 text-white text-shadow'} hover:cursor-pointer justify-center px-4 relative uppercase text-base font-semibold header-link`;
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -34,16 +34,16 @@ const Header = () => {
 					<Logo scrollHeader={scrollHeader}/>
 					<ul className="flex">
 						<li>
-							<Link href="/" className={Classname(classLink)}>Qui suis-je ?</Link>
+							<Link to="about" smooth={true} spy={true} offset={-20} className={Classname(classLink)}>Qui suis-je ?</Link>
 						</li>
 						<li>
-							<Link href="/" className={classLink}>Mes valeurs</Link>
+							<Link to="values" smooth={true} spy={true} offset={-55} className={classLink}>Mes valeurs</Link>
 						</li>
 						<li>
-							<Link href="/" className={classLink}>Services</Link>
+							<Link to="services" smooth={true} spy={true} offset={-55} className={classLink}>Services</Link>
 						</li>
 						<li>
-							<Link href="/" className={classLink}>Contactez-moi</Link>
+							<Link to="contact" smooth={true} spy={true} offset={-55} className={classLink}>Contactez-moi</Link>
 						</li>
 					</ul>
 				</Container>
