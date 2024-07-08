@@ -32,7 +32,7 @@ const Intro = () => {
 			</Container>
 			<div className="bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full z-30"></div>
 			<div className="absolute h-full w-full z-20">
-				<Image src="/static/img/bg_intro.webp" priority={true} fill={true} className="object-cover" fetchPriority="high"
+				<Image src="/static/img/bg_intro.webp" blurDataURL="/static/img/bg_intro.webp" placeholder="blur" priority={true} fill={true} className="object-cover" fetchPriority="high"
 							 alt="intro"/>
 			</div>
 		</section>
