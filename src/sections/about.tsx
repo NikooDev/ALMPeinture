@@ -33,27 +33,6 @@ const About = () => {
 		}
 	}, []);
 
-	const handleImageClick = (index: number) => {
-		if (intervalRef.current !== null) {
-			clearInterval(intervalRef.current);
-		}
-		setIsFading(true);
-		setTimeout(() => {
-			setCurrentImage(index);
-			setIsFading(false);
-			if (intervalRef.current !== null) {
-				clearInterval(intervalRef.current);
-			}
-			intervalRef.current = window.setInterval(() => {
-				setIsFading(true);
-				setTimeout(() => {
-					setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-					setIsFading(false);
-				}, 200);
-			}, 3000);
-		}, 200);
-	};
-
 	return (
 		<section className="py-20">
 			<Container>
@@ -87,7 +66,7 @@ const About = () => {
 						</div>
 						<div className="w-1/3 flex flex-col space-y-4 ml-4">
 							{images.map((image, index) => (
-								<button key={index} onClick={() => handleImageClick(index)}>
+								<button key={index}>
 									<Image
 										src={image.src}
 										height={144}
