@@ -37,7 +37,7 @@ const About = () => {
 		<section className="py-20">
 			<Container>
 				<Title className="text-center mb-10">Mon histoire</Title>
-				<div className="flex items-center justify-between w-full">
+				<div className="flex items-center justify-around w-full">
 					<div className="bg-white shadow-md py-3 px-5 rounded-2xl w-1/2">
 						<p className="italic text-lg font-medium text-slate-800 whitespace-pre-wrap">
 							Après plusieurs années passées dans le domaine du commercial, j'ai choisi de me lancer dans ce qui me
@@ -54,7 +54,7 @@ const About = () => {
 							<Logo scrollHeader={true}/>
 						</div>
 					</div>
-					<div className="flex">
+					<div className="flex justify-end">
 						<div className="w-2/3">
 							<Image
 								src={images[currentImage].src}
@@ -64,7 +64,7 @@ const About = () => {
 								alt={images[currentImage].alt}
 							/>
 						</div>
-						<div className="w-1/3 flex flex-col space-y-4 ml-4">
+						<div className="w-1/5 flex flex-col space-y-4 ml-4">
 							{images.map((image, index) => (
 								<button key={index}>
 									<Image
