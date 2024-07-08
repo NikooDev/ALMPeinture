@@ -55,7 +55,7 @@ const About = () => {
 								src={images[currentImage].src}
 								height={467}
 								width={350}
-								className="rounded-2xl object-cover relative"
+								className="rounded-2xl object-cover relative w-auto"
 								alt="Amaury"
 							/>
 						</div>
@@ -66,7 +66,7 @@ const About = () => {
 									src={image.src}
 									height={144}
 									width={108}
-									className="rounded-2xl shadow-md transition-all"
+									className="rounded-2xl shadow-md transition-all w-auto"
 									style={{ opacity: currentImage === index ? 1 : 0.5 }}
 									alt="Amaury"
 								/>
