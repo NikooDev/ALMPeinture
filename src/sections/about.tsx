@@ -31,10 +31,10 @@ const About = () => {
 	return (
 		<section className="pt-28 bg-slate-800 h-screen">
 			<Container>
-				<Title className="text-center mb-16 text-white">Mon histoire</Title>
+				<Title className="text-center mb-16 text-slate-200">Mon histoire</Title>
 				<div className="flex items-center justify-around w-full">
-					<div className="bg-white bg-opacity-10 shadow-md py-3 px-5 rounded-2xl w-1/2">
-						<p className="italic text-base text-white whitespace-pre-wrap">
+					<div className="bg-white bg-opacity-10 shadow-md py-4 px-5 rounded-2xl w-1/2">
+						<p className="italic text-base text-slate-200 whitespace-pre-wrap">
 							Après plusieurs années passées dans le domaine du commercial, j'ai choisi de me lancer dans ce qui me
 							passionne aujourd'hui : la peinture.<br/><br/>
 
@@ -45,7 +45,7 @@ const About = () => {
 							personnaliser votre intérieur.<br/><br/>Les revêtements de sols, les papiers peint, la peinture… sont autant
 							d’éléments qui me permettront de mettre votre maison à votre goût.
 						</p>
-						<div className="mt-3 flex justify-end w-full">
+						<div className="mt-4 flex justify-end w-full">
 							<Logo scrollHeader={true} textWhite/>
 						</div>
 					</div>

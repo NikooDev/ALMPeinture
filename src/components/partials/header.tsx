@@ -4,12 +4,12 @@ import { useEffect, useState } from 'react';
 import Logo from '@/components/ui/logo';
 import Container from '@/components/ui/container';
 import Classname from 'classnames';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const Header = () => {
 	const [loading, setLoading] = useState<boolean>(true);
 	const [scrollHeader, setScrollHeader] = useState<boolean>(true);
-	const classLink = `flex items-center ${scrollHeader ? 'h-16 text-slate-600 scrolled' : 'h-28 text-white text-shadow'} hover:cursor-pointer justify-center px-4 relative uppercase text-base font-semibold header-link`;
+	const classLink = `flex items-center ${scrollHeader ? 'h-16 text-slate-800 scrolled' : 'h-28 text-white text-shadow'} hover:cursor-pointer justify-center px-4 relative uppercase text-base font-semibold header-link`;
 
 	useEffect(() => {
 		const handleScroll = () => {
