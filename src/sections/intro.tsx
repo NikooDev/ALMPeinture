@@ -8,7 +8,7 @@ import Classname from 'classnames';
 
 const Intro = () => {
 	return (
-		<section className="flex items-center relative h-screen w-full">
+		<section className="flex items-center relative h-screen w-full" id="intro">
 			<Container>
 				<div className="flex items-center">
 					<div className="leading-[1] w-full text-center">
