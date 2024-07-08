@@ -8,7 +8,6 @@ import Logo from '@/components/ui/logo';
 
 const About = () => {
 	const [currentImage, setCurrentImage] = useState(0);
-	const [isFading, setIsFading] = useState(false);
 	const intervalRef = useRef<number | null>(null);
 
 	const images = [
@@ -19,11 +18,7 @@ const About = () => {
 
 	useEffect(() => {
 		intervalRef.current = window.setInterval(() => {
-			setIsFading(true);
-			setTimeout(() => {
-				setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-				setIsFading(false);
-			}, 200);
+			setCurrentImage((prevImage) => (prevImage + 1) % images.length);
 		}, 3000);
 
 		return () => {
