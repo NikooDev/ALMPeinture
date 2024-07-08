@@ -66,15 +66,14 @@ const About = () => {
 						</div>
 						<div className="w-1/5 flex flex-col space-y-4 ml-4">
 							{images.map((image, index) => (
-								<button key={index}>
-									<Image
-										src={image.src}
-										height={144}
-										width={108}
-										className={`rounded-2xl shadow-md transition-all ${currentImage === index ? 'opacity-100' : 'opacity-50'}`}
-										alt={image.alt}
-									/>
-								</button>
+								<Image
+									key={index}
+									src={image.src}
+									height={144}
+									width={108}
+									className={`rounded-2xl shadow-md transition-all ${currentImage === index ? 'opacity-100' : 'opacity-50'}`}
+									alt={image.alt}
+								/>
 							))}
 						</div>
 					</div>
