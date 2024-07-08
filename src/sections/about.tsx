@@ -23,7 +23,7 @@ const About = () => {
 			setTimeout(() => {
 				setCurrentImage((prevImage) => (prevImage + 1) % images.length);
 				setIsFading(false);
-			}, 200);
+			}, 300);
 		}, 3000);
 
 		return () => {
