@@ -7,6 +7,7 @@ import Values from '@/sections/values';
 import Services from '@/sections/services';
 import References from '@/sections/references';
 import Beforeafter from '@/sections/beforeafter';
+import Contact from '@/sections/contact';
 
 const Home = () => {
 	return (
@@ -25,6 +26,9 @@ const Home = () => {
 			</Element>
 			<References/>
 			<Beforeafter/>
+			<Element name="contact">
+				<Contact/>
+			</Element>
 		</>
 	);
 }

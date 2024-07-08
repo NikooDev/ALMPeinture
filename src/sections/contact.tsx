@@ -1,4 +1,4 @@
-const Services = () => {
+const Contact = () => {
 	return (
 		<section className="h-screen">
 
@@ -6,4 +6,4 @@ const Services = () => {
 	);
 }
 
-export default Services;
+export default Contact;

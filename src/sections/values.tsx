@@ -1,6 +1,6 @@
 const Values = () => {
 	return (
-		<section>
+		<section className="h-screen">
 
 		</section>
 	);

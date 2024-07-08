@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 const Header = () => {
 	const [loading, setLoading] = useState<boolean>(true);
 	const [scrollHeader, setScrollHeader] = useState<boolean>(true);
-	const classLink = `flex items-center ${scrollHeader ? 'h-16 text-slate-800 scrolled' : 'h-28 text-white text-shadow'} hover:cursor-pointer justify-center px-4 relative uppercase text-base font-semibold header-link`;
+	const classLink = `flex items-center ${scrollHeader ? 'h-16 text-slate-500 scrolled hover:text-slate-800' : 'h-28 text-white text-shadow'} hover:cursor-pointer transition-all justify-center px-4 relative uppercase text-base font-semibold header-link`;
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -35,18 +35,18 @@ const Header = () => {
 			<nav className={Classname(scrollHeader ? 'h-16 bg-opacity-100' : 'h-28 bg-opacity-10', 'bg-white flex items-center shadow-md transition-all duration-200')}>
 				<Container className="flex items-center justify-between overflow-hidden">
 					<Logo scrollHeader={scrollHeader}/>
-					<ul className="flex">
+					<ul className="flex gap-2">
 						<li>
-							<Link to="about" smooth={true} spy={true} offset={-20} className={Classname(classLink)}>Qui suis-je ?</Link>
+							<Link to="about" activeClass={'active translate-y-2 text-slate-800'} smooth={true} spy={true} offset={-20} className={Classname(classLink)}>Qui suis-je ?</Link>
 						</li>
 						<li>
-							<Link to="values" smooth={true} spy={true} offset={-55} className={classLink}>Mes valeurs</Link>
+							<Link to="values" activeClass={'active translate-y-2 text-slate-800'} smooth={true} spy={true} className={classLink}>Mes valeurs</Link>
 						</li>
 						<li>
-							<Link to="services" smooth={true} spy={true} offset={-55} className={classLink}>Services</Link>
+							<Link to="services" activeClass={'active translate-y-2 text-slate-800'} smooth={true} spy={true} className={classLink}>Services</Link>
 						</li>
 						<li>
-							<Link to="contact" smooth={true} spy={true} offset={-55} className={classLink}>Contactez-moi</Link>
+							<Link to="contact" activeClass={'active translate-y-2 text-slate-800'} smooth={true} spy={true} className={classLink}>Contactez-moi</Link>
 						</li>
 					</ul>
 				</Container>
