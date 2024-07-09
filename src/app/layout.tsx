@@ -1,12 +1,12 @@
 import React from 'react';
-import { Montserrat } from 'next/font/google'
+import { Montserrat } from 'next/font/google';
 import localFont from 'next/font/local';
 import Header from '@/components/partials/header';
 import Footer from '@/components/partials/footer';
 import Classname from 'classnames';
+import ScrollTop from '@/components/ui/scroll';
 import type { Metadata } from 'next';
 import '@/styles/globals.css';
-import ScrollTop from '@/components/ui/scroll';
 
 const fontRebel = localFont({ src: '../assets/fonts/rebel.woff2', variable: '--font-rebel' });
 const fontDefault = Montserrat({

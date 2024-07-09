@@ -1,8 +1,8 @@
 const References = () => {
 	return (
-		<section>
+		<>
 
-		</section>
+		</>
 	);
 }
 

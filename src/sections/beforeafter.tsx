@@ -1,8 +1,8 @@
 const Beforeafter = () => {
 	return (
-		<section>
+		<>
 
-		</section>
+		</>
 	);
 }
 

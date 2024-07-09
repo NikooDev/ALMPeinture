@@ -1,8 +1,8 @@
 const Services = () => {
 	return (
-		<section className="h-screen">
+		<>
 
-		</section>
+		</>
 	);
 }
 

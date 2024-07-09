@@ -4,11 +4,10 @@ import Image from 'next/image';
 import Container from '@/components/ui/container';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import Classname from 'classnames';
 
 const Intro = () => {
 	return (
-		<section className="flex items-center relative h-screen w-full" id="intro">
+		<>
 			<Container>
 				<div className="flex items-center">
 					<div className="leading-[1] w-full text-center">
@@ -41,7 +40,7 @@ const Intro = () => {
 							 fill={true} className="object-cover" fetchPriority="high"
 							 alt="intro"/>
 			</div>
-		</section>
+		</>
 	);
 }
 
