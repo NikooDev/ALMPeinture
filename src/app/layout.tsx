@@ -2,9 +2,7 @@ import React from 'react';
 import { Montserrat } from 'next/font/google';
 import localFont from 'next/font/local';
 import Header from '@/components/partials/header';
-import Footer from '@/components/partials/footer';
 import Classname from 'classnames';
-import ScrollTop from '@/components/ui/scroll';
 import type { Metadata } from 'next';
 import '@/styles/globals.css';
 
@@ -27,7 +25,6 @@ export default function RootLayout({
 	return (
 		<html lang="fr">
 		  <body>
-				<ScrollTop/>
 			  <main className={Classname(fontRebel.variable, fontDefault.variable, fontDefault.className)}>
 					<Header/>
 					{ children }
