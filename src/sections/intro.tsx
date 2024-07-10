@@ -24,7 +24,7 @@ const Intro = () => {
 							"Donner la priorité à mes clients"
 						</motion.p>
 						<div className="absolute z-40 left-1/2 -ml-[25px] bottom-14 animate-bounce">
-							<Link to={'about'} smooth={true} spy={true} offset={-20} className="hover:cursor-pointer flex shadow-md shadow-black rounded-full">
+							<Link to={'about'} smooth={true} spy={true} offset={-20} className="hover:cursor-pointer flex box-shadow rounded-full">
 								<svg xmlns="http://www.w3.org/2000/svg" height={50} width={50} fill="white" viewBox="0 0 24 24">
 									<path
 										d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm3.36,8.85-3,3a.51.51,0,0,1-.71,0l-3-3A.5.5,0,0,1,9,10h6A.5.5,0,0,1,15.36,10.85Z"/>

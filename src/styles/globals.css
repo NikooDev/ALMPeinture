@@ -24,6 +24,10 @@ body {
   text-shadow: 1px 1px 3px rgb(0, 0, 0, .8);
 }
 
+.box-shadow {
+  box-shadow: 0 0 5px #000;
+}
+
 .header-link::after {
   content: '';
   position: absolute;
