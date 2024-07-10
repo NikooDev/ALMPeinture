@@ -14,7 +14,7 @@ const Contact = () => {
 						<a href="mailto:almpeinture56@gmail.com">almpeinture56@gmail.com</a>
 						<a href="tel:0698282549">06 98 28 25 49</a>
 						<div className="mt-10">
-							<Logo scrollHeader={false}/>
+							<Logo scrollHeader={false} colours/>
 						</div>
 					</div>
 					<div className="w-1/2">
