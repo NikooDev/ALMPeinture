@@ -34,11 +34,11 @@ const Home = () => {
 					<Services/>
 				</Element>
 			</section>
-			<section className="py-28">
+			<section className="pb-28 mt-52 relative">
 				<References/>
 			</section>
 			<section id="portfolio">
-				<Element name="portfolio" className="py-28">
+				<Element name="portfolio" className="pb-28">
 					<Portfolio/>
 				</Element>
 			</section>

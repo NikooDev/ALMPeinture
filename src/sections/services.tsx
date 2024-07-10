@@ -32,7 +32,7 @@ const Services = () => {
 			<Container>
 				<Title className="relative z-40 text-slate-800 mt-28 w-full text-center">Mes services</Title>
 			</Container>
-			<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 px-5 mt-16">
+			<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 px-5 mt-24">
 				{ services.map((service, index) => (
 					<motion.div initial={{scale: 0, opacity: 0}} transition={{duration: .3, delay: index * .1}}
 											whileInView={{scale: 1, opacity: 1}} key={index} className="bg-white rounded-2xl shadow-md overflow-hidden">
