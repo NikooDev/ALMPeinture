@@ -23,21 +23,21 @@ const Contact = () => {
 						<form method="POST" className="w-full">
 							<motion.div initial={{translateY: '100%', opacity: 0}} transition={{duration: .3, delay: .45}}
 													whileInView={{translateY: 0, opacity: 1}} className="flex gap-5 w-full mb-5">
-								<input type="text" placeholder="Nom" className="focus:outline-0 focus:border-2 focus:border-slate-500 border-2 border-slate-700 transition-all duration-200 text-white capitalize w-1/2 py-3 px-5 bg-white bg-opacity-10 shadow-md rounded-lg placeholder:text-slate-300"/>
-								<input type="text" placeholder="Adresse e-mail" className="focus:outline-0 focus:border-2 focus:border-slate-500 border-2 border-slate-700 transition-all duration-200 text-white w-1/2 py-3 px-5 bg-white bg-opacity-10 shadow-md rounded-lg placeholder:text-slate-300"/>
+								<input type="text" id="name" autoComplete="name" placeholder="Nom" className="focus:outline-0 focus:border-2 focus:border-slate-500 border-2 border-slate-700 transition-all duration-200 text-white capitalize w-1/2 py-3 px-5 bg-white bg-opacity-10 shadow-md rounded-lg placeholder:text-slate-300"/>
+								<input type="text" id="email" autoComplete="email" placeholder="Adresse e-mail" className="focus:outline-0 focus:border-2 focus:border-slate-500 border-2 border-slate-700 transition-all duration-200 text-white w-1/2 py-3 px-5 bg-white bg-opacity-10 shadow-md rounded-lg placeholder:text-slate-300"/>
 							</motion.div>
 							<motion.div initial={{translateY: '100%', opacity: 0}} transition={{duration: .3, delay: .35}}
 									 whileInView={{translateY: 0, opacity: 1}} className="flex gap-5 w-full mb-5">
-								<input type="text" autoComplete="tel" placeholder="Téléphone" className="focus:outline-0 focus:border-2 focus:border-slate-500 border-2 border-slate-700 transition-all duration-200 text-white w-1/2 py-3 px-5 bg-white bg-opacity-10 shadow-md rounded-lg placeholder:text-slate-300"/>
-								<input type="text" placeholder="Adresse" className="focus:outline-0 focus:border-2 focus:border-slate-500 border-2 border-slate-700 transition-all duration-200 text-white w-1/2 py-3 px-5 bg-white bg-opacity-10 shadow-md rounded-lg placeholder:text-slate-300"/>
+								<input type="text" id="tel" autoComplete="tel" placeholder="Téléphone" className="focus:outline-0 focus:border-2 focus:border-slate-500 border-2 border-slate-700 transition-all duration-200 text-white w-1/2 py-3 px-5 bg-white bg-opacity-10 shadow-md rounded-lg placeholder:text-slate-300"/>
+								<input type="text" id="address" autoComplete="address-level1" placeholder="Adresse" className="focus:outline-0 focus:border-2 focus:border-slate-500 border-2 border-slate-700 transition-all duration-200 text-white w-1/2 py-3 px-5 bg-white bg-opacity-10 shadow-md rounded-lg placeholder:text-slate-300"/>
 							</motion.div>
 							<motion.div initial={{translateY: '100%', opacity: 0}} transition={{duration: .3, delay: .15}}
 													whileInView={{translateY: 0, opacity: 1}} className="mb-5">
-								<input type="text" placeholder="Objet" className="focus:outline-0 focus:border-2 focus:border-slate-500 border-2 border-slate-700 transition-all duration-200 text-white w-full py-3 px-5 bg-white bg-opacity-10 shadow-md rounded-lg placeholder:text-slate-300"/>
+								<input type="text" id="object" placeholder="Objet" className="focus:outline-0 focus:border-2 focus:border-slate-500 border-2 border-slate-700 transition-all duration-200 text-white w-full py-3 px-5 bg-white bg-opacity-10 shadow-md rounded-lg placeholder:text-slate-300"/>
 							</motion.div>
 							<motion.div initial={{translateY: '100%', opacity: 0}} transition={{duration: .3, delay: 0}}
 													whileInView={{translateY: 0, opacity: 1}}>
-								<textarea placeholder="Votre message" rows={6} className="resize-none focus:outline-0 focus:border-2 focus:border-slate-500 border-2 border-slate-700 transition-all duration-200 text-white w-full py-3 px-5 bg-white bg-opacity-10 shadow-md rounded-lg placeholder:text-slate-300"></textarea>
+								<textarea placeholder="Votre message" id="message" rows={6} className="resize-none focus:outline-0 focus:border-2 focus:border-slate-500 border-2 border-slate-700 transition-all duration-200 text-white w-full py-3 px-5 bg-white bg-opacity-10 shadow-md rounded-lg placeholder:text-slate-300"></textarea>
 							</motion.div>
 							<motion.div initial={{translateY: '100%', opacity: 0}} transition={{duration: .3, delay: 0}}
 													whileInView={{translateY: 0, opacity: 1}} className="w-full mt-10">
