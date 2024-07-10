@@ -46,7 +46,7 @@ const Header = () => {
 							<Link to="services" activeClass={'active translate-y-2 text-slate-800'} smooth={true} spy={true} offset={-110} className={classLink}>Services</Link>
 						</li>
 						<li>
-							<Link to="contact" activeClass={'active translate-y-2 text-slate-800'} smooth={true} spy={true} className={classLink}>Contactez-moi</Link>
+							<Link to="contact" activeClass={'active translate-y-2 text-slate-800'} smooth={true} spy={true} offset={-110} className={classLink}>Contactez-moi</Link>
 						</li>
 					</ul>
 				</Container>

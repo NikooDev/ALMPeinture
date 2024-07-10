@@ -31,7 +31,6 @@ export default function RootLayout({
 			  <main className={Classname(fontRebel.variable, fontDefault.variable, fontDefault.className)}>
 					<Header/>
 					{ children }
-					<Footer/>
 				</main>
 			</body>
 		</html>
