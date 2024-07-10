@@ -29,7 +29,7 @@ const Home = () => {
 				</Element>
 			</section>
 			<section id="services">
-				<Element name="services" className="h-screen">
+				<Element name="services">
 					<Services/>
 				</Element>
 			</section>
