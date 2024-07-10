@@ -9,6 +9,7 @@ import References from '@/sections/references';
 import Beforeafter from '@/sections/beforeafter';
 import Contact from '@/sections/contact';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Portfolio from '@/sections/portfolio';
 
 const Home = () => {
 	return (
@@ -35,6 +36,11 @@ const Home = () => {
 			</section>
 			<section className="py-28">
 				<References/>
+			</section>
+			<section id="portfolio">
+				<Element name="portfolio" className="py-28">
+					<Portfolio/>
+				</Element>
 			</section>
 			<section className="py-28">
 				<Beforeafter/>

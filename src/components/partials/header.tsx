@@ -49,7 +49,7 @@ const Header = () => {
 										offset={-110} className={classLink}>Services</Link>
 						</li>
 						<li>
-							<Link to="gallerie" activeClass={'active translate-y-2 text-slate-800'} smooth={true} spy={true}
+							<Link to="portfolio" activeClass={'active translate-y-2 text-slate-800'} smooth={true} spy={true}
 										offset={-110} className={classLink}>Réalisations</Link>
 						</li>
 						<li>
