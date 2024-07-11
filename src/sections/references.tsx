@@ -82,16 +82,16 @@ const References = () => {
 					<div className="min-h-64 mt-16 w-1/2">
 						<div className="relative">
 							<div ref={sliderRef} className="keen-slider">
-								{texts.map((text, index) => (
+								{ texts.map((text, index) => (
 									<div key={index} className="keen-slider__slide text-left text-white text-shadow">
 										<p className="font-bold text-[1.3rem] italic">« {`${text.avis}`} »</p>
 										<p className="font-medium mt-5 text-lg">{text.name}</p>
 										<p className="font-medium text-sm">{text.ville}</p>
 									</div>
-								))}
+								)) }
 							</div>
 						</div>
-						{loaded && instanceRef.current && (
+						{ loaded && instanceRef.current && (
 							<div className="dots">
 								{[
 									...Array(instanceRef.current.track.details.slides.length).keys()
@@ -107,7 +107,7 @@ const References = () => {
 									);
 								})}
 							</div>
-						)}
+						) }
 					</div>
 				</Container>
 			</ParallaxBanner>

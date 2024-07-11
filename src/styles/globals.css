@@ -122,6 +122,14 @@ body {
   background: rgba(0, 0, 0, .5);
 }
 
+.dots.color > .dot {
+  background-color: #fff;
+}
+
+.dots.color > .dot.active {
+  background-color: rgb(71, 85, 105);
+}
+
 .masonry-grid {
   display: flex;
   width: auto;
