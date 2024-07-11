@@ -42,7 +42,7 @@ const Home = () => {
 					<Portfolio/>
 				</Element>
 			</section>
-			<section>
+			<section className="hidden">
 				<Beforeafter/>
 			</section>
 			<div className="relative w-full">
