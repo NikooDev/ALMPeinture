@@ -161,13 +161,12 @@ const Portfolio = () => {
 				<button
 					onClick={handlePreviousPage}
 					disabled={currentPage === 0}
-					className="flex items-center h-11 disabled:opacity-50 pr-5 rounded-2xl hover:disabled:bg-transparent hover:disabled:text-slate-600 text-slate-600 mr-5 hover:bg-slate-600 hover:text-white transition-colors duration-200"
+					className="flex items-center h-11 disabled:opacity-50 rounded-2xl hover:disabled:bg-transparent hover:disabled:text-slate-600 text-slate-600 mr-5 hover:bg-slate-600 hover:text-white transition-colors duration-200"
 				>
 					<svg xmlns="http://www.w3.org/2000/svg" height={50} width={50} fill="currentColor" viewBox="0 0 24 24">
 						<path
 							d="M8.22,12.72A.75.75,0,0,1,8,12.19v-.38a.77.77,0,0,1,.22-.53l5.14-5.13a.5.5,0,0,1,.71,0l.71.71a.49.49,0,0,1,0,.7L10.33,12l4.45,4.44a.5.5,0,0,1,0,.71l-.71.7a.5.5,0,0,1-.71,0Z"/>
 					</svg>
-					<span className="text-sm uppercase font-medium">Précédent</span>
 				</button>
 				<div className="dots color">
 					{renderDots()}
@@ -175,9 +174,8 @@ const Portfolio = () => {
 				<button
 					onClick={handleNextPage}
 					disabled={currentPage === totalPages - 1}
-					className="flex items-center h-11 disabled:opacity-50 pl-5 rounded-2xl hover:disabled:bg-transparent hover:disabled:text-slate-600 text-slate-600 ml-5 hover:bg-slate-600 hover:text-white transition-colors duration-200"
+					className="flex items-center h-11 disabled:opacity-50 rounded-2xl hover:disabled:bg-transparent hover:disabled:text-slate-600 text-slate-600 ml-5 hover:bg-slate-600 hover:text-white transition-colors duration-200"
 				>
-					<span className="text-sm uppercase font-medium">Suivant</span>
 					<svg xmlns="http://www.w3.org/2000/svg" height={50} width={50} fill="currentColor" viewBox="0 0 24 24">
 						<path d="M15.78,11.28a.75.75,0,0,1,.22.53v.38a.77.77,0,0,1-.22.53l-5.14,5.13a.5.5,0,0,1-.71,0l-.71-.71a.49.49,0,0,1,0-.7L13.67,12,9.22,7.56a.5.5,0,0,1,0-.71l.71-.7a.5.5,0,0,1,.71,0Z"/>
 					</svg>
