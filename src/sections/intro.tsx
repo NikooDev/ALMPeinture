@@ -11,15 +11,15 @@ const Intro = () => {
 			<Container>
 				<div className="flex items-center">
 					<div className="leading-[1] w-full text-center">
-						<motion.p initial={{opacity: 0}} transition={{duration: .5}} whileInView={{opacity: 1}}
+						<motion.p initial={{opacity: 0}} transition={{duration: .5}} whileInView={{opacity: 1}} viewport={{ once: true }}
 											className="relative text-white text-[6rem] z-40 font-bold text-shadow">
 							Artisan Peintre
 						</motion.p>
-						<motion.p initial={{opacity: 0}} transition={{duration: .5, delay: 0.5}} whileInView={{opacity: 1}}
+						<motion.p initial={{opacity: 0}} transition={{duration: .5, delay: 0.5}} whileInView={{opacity: 1}} viewport={{ once: true }}
 											className="relative text-white text-3xl z-40 font-bold text-shadow uppercase">
 							Revêtement sols & murs
 						</motion.p>
-						<motion.p initial={{opacity: 0}} transition={{duration: .5, delay: 1}} whileInView={{opacity: 1}}
+						<motion.p initial={{opacity: 0}} transition={{duration: .5, delay: 1}} whileInView={{opacity: 1}} viewport={{ once: true }}
 											className="relative text-white text-2xl z-40 font-bold text-shadow mt-20 italic">
 							"Donner la priorité à mes clients"
 						</motion.p>

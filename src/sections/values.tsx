@@ -15,7 +15,7 @@ const Values = () => {
 						<div className="flex gap-10">
 							<motion.div className="bg-white bg-opacity-50 shadow-md rounded-2xl p-5 max-w-80 min-h-64 relative"
 													initial={{translateX: '-100%', opacity: 0}} transition={{duration: .5, delay: 0.5}}
-													whileInView={{translateX: 0, opacity: 1}}>
+													whileInView={{translateX: 0, opacity: 1}} viewport={{ once: true }}>
 								<div className="absolute -top-6 left-1/2 -ml-7">
 									<div className="flex justify-center items-center bg-white shadow-md h-14 w-14 rounded-full text-red-500">
 										<svg xmlns="http://www.w3.org/2000/svg" height={42} width={42} fill="currentColor" viewBox="0 0 24 24">
@@ -30,7 +30,7 @@ const Values = () => {
 							</motion.div>
 							<motion.div className="bg-white bg-opacity-50 shadow-md rounded-2xl p-5 max-w-80 min-h-64 relative"
 													initial={{translateY: '100%', opacity: 0}} transition={{duration: .5, delay: 0.5}}
-													whileInView={{translateY: 0, opacity: 1}}>
+													whileInView={{translateY: 0, opacity: 1}} viewport={{ once: true }}>
 								<div className="absolute -top-6 left-1/2 -ml-7">
 									<div className="flex justify-center items-center bg-white shadow-md h-14 w-14 rounded-full text-blue-500">
 										<svg xmlns="http://www.w3.org/2000/svg" height={36} width={36} fill="currentColor" viewBox="0 0 24 24">
@@ -45,7 +45,7 @@ const Values = () => {
 							</motion.div>
 							<motion.div className="bg-white bg-opacity-50 shadow-md rounded-2xl p-5 max-w-80 min-h-64 relative"
 													initial={{translateX: '100%', opacity: 0}} transition={{duration: .5, delay: 0.5}}
-													whileInView={{translateX: 0, opacity: 1}}>
+													whileInView={{translateX: 0, opacity: 1}} viewport={{ once: true }}>
 								<div className="absolute -top-6 left-1/2 -ml-7">
 									<div className="flex justify-center items-center bg-white shadow-md h-14 w-14 rounded-full text-green-500">
 										<svg xmlns="http://www.w3.org/2000/svg" height={42} width={42} fill="currentColor" viewBox="0 0 24 24">

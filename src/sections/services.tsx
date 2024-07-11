@@ -35,7 +35,7 @@ const Services = () => {
 			<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 px-5 mt-24">
 				{ services.map((service, index) => (
 					<motion.div initial={{scale: 0, opacity: 0}} transition={{duration: .3, delay: index * .1}}
-											whileInView={{scale: 1, opacity: 1}} key={index} className="bg-white rounded-2xl shadow-md overflow-hidden">
+											whileInView={{scale: 1, opacity: 1}} viewport={{ once: true }} key={index} className="bg-white rounded-2xl shadow-md overflow-hidden">
 						<img src={service.imageUrl} alt={service.title} className="w-full h-52 object-cover"/>
 						<div className="p-6">
 							<h2 className="text-3xl mb-5 font-rebel text-slate-800">{service.title}</h2>
