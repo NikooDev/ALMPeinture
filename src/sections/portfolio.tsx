@@ -157,7 +157,7 @@ const Portfolio = () => {
 					</Masonry>
 				</div>
 			</AnimatePresence>
-			<div className="flex justify-center items-center mt-4">
+			<div className="flex justify-center items-center">
 				<button
 					onClick={handlePreviousPage}
 					disabled={currentPage === 0}
