@@ -37,23 +37,23 @@ const Header = () => {
 					<Logo scrollHeader={scrollHeader} colours={!scrollHeader} textWhite/>
 					<ul className="flex gap-2">
 						<li>
-							<Link to="about" activeClass={'active translate-y-2 text-slate-800'} smooth={true} offset={-20}
+							<Link to="about" activeClass={'active translate-y-2 text-slate-800'} spy={true} smooth={true} offset={-20}
 										className={Classname(classLink)}>Qui suis-je ?</Link>
 						</li>
 						<li>
-							<Link to="values" activeClass={'active translate-y-2 text-slate-800'} smooth={true}
+							<Link to="values" activeClass={'active translate-y-2 text-slate-800'} spy={true} smooth={true}
 										className={classLink}>Mes valeurs</Link>
 						</li>
 						<li>
-							<Link to="services" activeClass={'active translate-y-2 text-slate-800'} smooth={true}
+							<Link to="services" activeClass={'active translate-y-2 text-slate-800'} spy={true} smooth={true}
 										offset={-110} className={classLink}>Services</Link>
 						</li>
 						<li>
-							<Link to="portfolio" activeClass={'active translate-y-2 text-slate-800'} smooth={true}
+							<Link to="portfolio" activeClass={'active translate-y-2 text-slate-800'} spy={true} smooth={true}
 										offset={-110} className={classLink}>Réalisations</Link>
 						</li>
 						<li>
-							<Link to="contact" activeClass={'active translate-y-2 text-slate-800'} smooth={true}
+							<Link to="contact" activeClass={'active translate-y-2 text-slate-800'} spy={true} smooth={true}
 										offset={-110} className={classLink}>Contactez-moi</Link>
 						</li>
 					</ul>

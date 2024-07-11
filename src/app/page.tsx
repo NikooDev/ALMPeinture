@@ -42,7 +42,7 @@ const Home = () => {
 					<Portfolio/>
 				</Element>
 			</section>
-			<section className="py-28">
+			<section>
 				<Beforeafter/>
 			</section>
 			<div className="relative w-full">
