@@ -2,7 +2,7 @@ import Container from '@/components/ui/container';
 import Title from '@/components/ui/title';
 import Masonry from 'react-masonry-css';
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const Portfolio = () => {
 	const portfolioRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLDivElement>;
@@ -79,6 +79,24 @@ const Portfolio = () => {
 
 	const itemsPerPage = 6;
 	const [currentPage, setCurrentPage] = useState(0);
+	const [imagesLoaded, setImagesLoaded] = useState(false);
+
+	useEffect(() => {
+		const imageLoadPromises: Promise<void>[] = [];
+
+		portfolio.forEach((item) => {
+			const img = new Image();
+			img.src = item.image;
+			const promise = new Promise<void>((resolve) => {
+				img.onload = () => resolve();
+			});
+			imageLoadPromises.push(promise);
+		});
+
+		Promise.all(imageLoadPromises).then(() => {
+			setImagesLoaded(true);
+		});
+	}, [portfolio]);
 
 	const totalPages = Math.ceil(portfolio.length / itemsPerPage);
 
@@ -135,26 +153,28 @@ const Portfolio = () => {
 			</Container>
 			<AnimatePresence mode="wait">
 				<div style={{minHeight: currentItems.length === 3 ? 800 / 2 : '50rem'}} key={currentPage}>
-					<Masonry
-						breakpointCols={breakpointColumnsObj}
-						className="masonry-grid mt-16"
-						columnClassName="masonry-grid-column" key={currentPage}>
-						{
-							currentItems.map((item, index) => (
-								<motion.div initial={{translateY: '20%', opacity: 0}}
-														animate={{translateY: 0, opacity: 1}}
-														exit={{translateY: '20%', opacity: 0}}
-														transition={{duration: 0.3, delay: index * 0.1}}
-														key={index}
-														className="bg-white rounded-2xl shadow-md overflow-hidden min-h-80">
-									<img src={item.image} alt={item.description} className="w-full h-full object-cover"/>
-									<div className="absolute bottom-0 bg-black bg-opacity-50 px-5 left-0 right-0 py-3">
-										<p className="text-white text-sm font-medium">{item.description}</p>
-									</div>
-								</motion.div>
-							))
-						}
-					</Masonry>
+					{ imagesLoaded && (
+						<Masonry
+							breakpointCols={breakpointColumnsObj}
+							className="masonry-grid mt-16"
+							columnClassName="masonry-grid-column" key={currentPage}>
+							{
+								currentItems.map((item, index) => (
+									<motion.div initial={{translateY: '20%', opacity: 0}}
+															animate={{translateY: 0, opacity: 1}}
+															exit={{translateY: '20%', opacity: 0}}
+															transition={{duration: 0.3, delay: index * 0.1}}
+															key={index}
+															className="bg-white rounded-2xl shadow-md overflow-hidden min-h-80">
+										<img src={item.image} alt={item.description} className="w-full h-full object-cover"/>
+										<div className="absolute bottom-0 bg-black bg-opacity-50 px-5 left-0 right-0 py-3">
+											<p className="text-white text-sm font-medium">{item.description}</p>
+										</div>
+									</motion.div>
+								))
+							}
+						</Masonry>
+					)}
 				</div>
 			</AnimatePresence>
 			<div className="flex justify-center items-center">
