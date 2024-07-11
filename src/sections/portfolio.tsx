@@ -146,7 +146,7 @@ const Portfolio = () => {
 														exit={{translateY: '20%', opacity: 0}}
 														transition={{duration: 0.3, delay: index * 0.1}}
 														key={index}
-														className="bg-white rounded-2xl shadow-md overflow-hidden">
+														className="bg-white rounded-2xl shadow-md overflow-hidden min-h-80">
 									<img src={item.image} alt={item.description} className="w-full h-full object-cover"/>
 									<div className="absolute bottom-0 bg-black bg-opacity-50 px-5 left-0 right-0 py-3">
 										<p className="text-white text-sm font-medium">{item.description}</p>
